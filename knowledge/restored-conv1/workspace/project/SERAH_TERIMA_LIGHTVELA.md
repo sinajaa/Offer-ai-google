@@ -563,7 +563,7 @@ biaya : ~$0.0006 per task
 ### 12.2 captchaai — saldo $5
 
 ```
-key     : ixvwhhocndcyyon2f1vbixds6ltuujnb
+key     : captchaai_REDACTED
 endpoint: https://ocr.captchaai.com/in.php & /res.php
 ```
 
@@ -572,7 +572,7 @@ Turnstile ✅, tapi reCAPTCHA v3 **skor rendah** -> AllModels tolak.
 ### 12.3 DDoS-Guard — cadangan
 
 ```
-key : JB1BY4C17D99TN-H1KL0DG8S3EM08SHW5K0XTPKR
+key : ddosguard_REDACTED
 ```
 
 ### Catatan teknis

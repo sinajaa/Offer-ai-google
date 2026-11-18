@@ -49,7 +49,7 @@ Terbukti keluar residensial BR (Formiga). Kurang stabil (kadang gagal).
 
 ### captchaai — saldo $5, TERBUKTI tembus Turnstile
 ```
-key    : ixvwhhocndcyyon2f1vbixds6ltuujnb
+key    : captchaai_REDACTED
 endpoint: https://ocr.captchaai.com/in.php  &  /res.php
 ```
 ```bash
@@ -64,7 +64,7 @@ Catatan: token reCAPTCHA **v3 Enterprise** (AllModels) DITOLAK walau token valid
 
 ### DDoS-Guard — cadangan
 ```
-key : JB1BY4C17D99TN-H1KL0DG8S3EM08SHW5K0XTPKR
+key : ddosguard_REDACTED
 src : https://my.ddos-guard.net/captcha/139272/keys/JB1BY4C17D99TN-.../common
 ```
 
