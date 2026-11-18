@@ -1,6 +1,19 @@
 {
  "checks": [
   {
+   "at": "2026-11-18T18:41:35Z",
+   "verdict": "DEAD",
+   "reason": [],
+   "tokens": [],
+   "new_repos": [],
+   "issues": [],
+   "errors": [
+    "gagal baca repo: HTTP Error 404: Not Found",
+    "code search gagal: HTTP Error 429: Too Many Requests",
+    "issue gagal: HTTP Error 404: Not Found"
+   ]
+  },
+  {
    "at": "2026-11-18T09:49:00Z",
    "verdict": "DEAD",
    "reason": [],
@@ -142,48 +155,16 @@
   "namhv94/google-ultra-vi"
  ],
  "last": {
-  "at": "2026-11-18T09:49:00Z",
+  "at": "2026-11-18T18:41:35Z",
   "verdict": "DEAD",
   "reason": [],
-  "tokens": [
-   "12d4d4c791",
-   "88e273bb69"
-  ],
+  "tokens": [],
   "new_repos": [],
-  "issues": [
-   {
-    "n": 26,
-    "title": "已经关门了吗",
-    "at": "2026-11-18T08:00"
-   },
-   {
-    "n": 25,
-    "title": "Web tool: ListAccounts CORS error fix in Step 1 + Checkout error (\"Something went wrong on our end\")",
-    "at": "2026-11-18T07:52"
-   },
-   {
-    "n": 23,
-    "title": "请求创建新的微信群（第13群）",
-    "at": "2026-11-18T07:20"
-   },
-   {
-    "n": 22,
-    "title": "getting error on web",
-    "at": "2026-11-18T06:36"
-   },
-   {
-    "n": 20,
-    "title": "似乎已经确定拉闸了，反重力员工发推",
-    "at": "2026-11-18T03:42"
-   },
-   {
-    "n": 19,
-    "title": "12个月的失效了， 1个月还能开，佬还有办法不",
-    "at": "2026-11-18T03:13"
-   }
-  ],
+  "issues": [],
   "errors": [
-   "code search gagal: HTTP Error 429: Too Many Requests"
+   "gagal baca repo: HTTP Error 404: Not Found",
+   "code search gagal: HTTP Error 429: Too Many Requests",
+   "issue gagal: HTTP Error 404: Not Found"
   ]
  }
 }
