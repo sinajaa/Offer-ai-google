@@ -70,16 +70,52 @@
   - `hex_REDACTED`
   - `hex_REDACTED`
 
-## Solver captcha
-### capbypass.pro (utama)
-- API: `POST https://api.capbypass.pro/createTask`, `/getTaskResult`, `/getBalance`
-- Biaya ~$0.0006/task. Hasil uji: reCAPTCHA v3 skor 0.9 ✅, Turnstile ✅, Geetest ✅, CaptchaFox ✅, AWS WAF ✅, reCAPTCHA v2 ❌ INACTIVE.
-- Key:
+## Solver captcha — 3 akun, 3 penyedia
 
-  - `cap_live_REDACTED`
+Diverifikasi live 2026-11-18 lewat endpoint balance masing-masing.
 
-### captchaai (cadangan)
-- `https://ocr.captchaai.com/in.php` & `/res.php`; Turnstile ✅, reCAPTCHA v3 skor rendah.
+| # | Penyedia | Akun | Key | Saldo live | Biaya | Status |
+|---|---|---|---|---|---|---|
+| 1 | **capbypass.pro** | 1 | `cap_live_REDACTED` | **$1.9563** | ~$0.0006/task | ✅ utama |
+| 2 | **captchaai** (ocr.captchaai.com) | 1 | `captchaai_REDACTED` | **$5** | per task | ⚠️ cadangan |
+| 3 | **DDoS-Guard solver** | 1 | `ddosguard_REDACTED` | tidak ada API saldo | — | ⚠️ cadangan |
+
+Catatan: total 3 akun, bukan kumpulan akun per penyedia — satu key per penyedia.
+
+### 1. capbypass.pro (yang dipakai)
+
+- API: `POST https://api.capbypass.pro/createTask`, `/getTaskResult` (poll 2–3 dtk), `/getBalance`
+- Hasil uji:
+
+| Tipe | Hasil |
+|---|---|
+| `ReCaptchaV3TaskProxyLess` | ✅ skor 0.9, ~2 dtk |
+| `ReCaptchaV3EnterpriseTaskProxyLess` | ✅ |
+| `TurnstileTaskProxyLess` | ✅ (token 773 char, HEX) |
+| `GeetestTaskProxyLess` | ✅ pakai `captchaId` |
+| `CaptchaFoxTaskProxyLess` | ✅ GMX, ~1,6 dtk |
+| `AntiAwsWafTaskProxyLess` | ✅ amazon.com (aws.amazon.com gagal) |
+| `ReCaptchaV2TaskProxyLess` | ❌ INACTIVE |
+
+### 2. captchaai (cadangan)
+
+- Endpoint: `https://ocr.captchaai.com/in.php` & `/res.php`; cek saldo `?key=...&action=getbalance`
+- Turnstile ✅ (dipakai HEX, sitekey `0x4AAAAAAF3EU-q7sNrfjP5Q`), reCAPTCHA v3 skor rendah → AllModels menolak.
+
+### 3. DDoS-Guard solver (cadangan terakhir)
+
+- Hanya key, tanpa dashboard saldo yang terdokumentasi. Dipakai kalau dua di atas gagal.
+
+### Yang pernah gagal walau pakai solver
+
+| Skenario | Hasil |
+|---|---|
+| AllModels: token capbypass + `x-turnstile-token` | 403 |
+| AllModels: token + `cf-turnstile-response` | 403 |
+| klik widget Turnstile manual (headless & headed) | token tetap kosong |
+| + proxy Resifactory / Proxidize sticky | 403 |
+
+Artinya: AllModels bukan soal token, tapi fingerprint/flow-nya.
 
 ## Proxy API key
 - FlashProxy: `fpk_live_...` (GET /api/v1/usage)
