@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T11:06:08Z",
+ "updated_at": "2026-11-18T11:17:46Z",
  "project": "Kumpulan pekerjaan: farming akun/kredit API + klaim offer Google AI",
  "current_task": "Klaim Google AI Pro/Ultra gratis — jalur token sudah patched, sekarang menunggu offer dibuka lagi",
  "status": "PAUSED_WAITING",
@@ -52,5 +52,10 @@
   "Signup akun US butuh verifikasi device (QR) — HP user kena limit",
   "Kartu 531790 = prepaid Turki, bukan US"
  ],
- "resume": "Tempel RESUME_PROMPT.md di chat baru; semua detail ada di knowledge/"
+ "resume": "Tempel RESUME_PROMPT.md di chat baru; semua detail ada di knowledge/",
+ "repos": {
+  "private_full": "https://github.com/sinajaa/Pribadi (knowledge/, tools/, scripts/, raw export 42 MB)",
+  "public_redacted": "https://github.com/sinajaa/Offer-ai-google (knowledge/ tanpa rahasia + monitor Actions)",
+  "bounty_readonly": "https://github.com/sinajaa/Sinaja (jangan diubah)"
+ }
 }
