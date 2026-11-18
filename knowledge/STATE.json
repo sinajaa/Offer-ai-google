@@ -1,0 +1,56 @@
+{
+ "updated_at": "2026-11-18T11:06:08Z",
+ "project": "Kumpulan pekerjaan: farming akun/kredit API + klaim offer Google AI",
+ "current_task": "Klaim Google AI Pro/Ultra gratis — jalur token sudah patched, sekarang menunggu offer dibuka lagi",
+ "status": "PAUSED_WAITING",
+ "owner_accounts": {
+  "google_main": "woybangsatkauuu@gmail.com",
+  "region": "Indonesia (accounts.google.co.id)",
+  "payment_method": "DANA terpasang"
+ },
+ "assets": {
+  "obscurify_usd": 101.75,
+  "nomask_keys": 22,
+  "hex_usd": 0.25,
+  "capbypass_usd": 1.99,
+  "captchaai_usd": 5,
+  "proxies": [
+   "resifactory",
+   "proxidize",
+   "flashproxy",
+   "ipcove"
+  ]
+ },
+ "google_offers": {
+  "ultra_20tb_12m_token": "DEAD (patched 2026-11-18)",
+  "ultra_30tb": "DEAD",
+  "ai_pro_student_12m": "ALIVE — butuh SheerID kampus US + metode bayar",
+  "ai_plus_student_12m": "ALIVE — kampus ID, 400 GB, Rp 0/bln",
+  "ai_plus_promo": "ALIVE — Rp 7.500 bulan pertama"
+ },
+ "monitor": {
+  "repo": "sinajaa/Offer-ai-googl",
+  "workflow": "watch-offers (cron 20 menit)",
+  "dashboard": "https://sinajaa.github.io/Offer-ai-googl/ (Pages belum diaktifkan)",
+  "last_verdict": "DEAD",
+  "signals": [
+   "hash token berubah",
+   "repo baru dengan SKU g1.play.20tb",
+   "issue berbunyi buka lagi"
+  ]
+ },
+ "next_actions": [
+  "Aktifkan GitHub Pages: repo Offer-ai-googl → Settings → Pages → Source: GitHub Actions",
+  "Kalau verdict berubah ALIVE: buka link offer, pastikan $0, subscribe, lalu cancel",
+  "Kalau mau AI Pro sekarang: cari verifikasi SheerID kampus US",
+  "Kalau mau AI Plus sekarang: verifikasi SheerID kampus Indonesia (akun co.id sudah menampilkan Rp 0)",
+  "Rotasi API key yang pernah tampil di chat sebelum dipakai produksi"
+ ],
+ "blockers": [
+  "Offer Ultra 12 bulan dihapus di sisi Google",
+  "Akun ID tidak akan melihat offer US walau link benar",
+  "Signup akun US butuh verifikasi device (QR) — HP user kena limit",
+  "Kartu 531790 = prepaid Turki, bukan US"
+ ],
+ "resume": "Tempel RESUME_PROMPT.md di chat baru; semua detail ada di knowledge/"
+}
