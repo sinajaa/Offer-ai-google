@@ -44,3 +44,4 @@ jobs:
           path: docs
 
       - uses: actions/deploy-pages@v4
+        continue-on-error: true
