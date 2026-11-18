@@ -127,3 +127,24 @@ Artinya: AllModels bukan soal token, tapi fingerprint/flow-nya.
 ## Catatan keamanan
 - Semua key di atas pernah tampil di chat; anggap sudah setengah publik. Rotasi kalau dipakai produksi.
 - Jangan commit file ini ke repo publik.
+
+## Verifikasi live — 2026-11-18
+
+| Layanan | Tercatat | Aktif sekarang | Bukti |
+|---|---|---|---|
+| obscurify | 108 akun / 104 key | **tidak diketahui** — key-nya tidak tersimpan | hanya ada di `ob_accounts.txt`/`ob_ready.txt` (sandbox lama, hilang); tidak ada di export chat |
+| nomask | 33 key unik | **0** | semua balas `401 invalid_api_key` (uji `/v1/models` dan `/v1/chat/completions`) |
+| HEX | 3 key | **≥2 aktif** | `hex_T8z8…` dan `hex_JXId…` → `/v1/models` 200 |
+| capbypass | 1 | ✅ saldo $1.9563 | `POST /getBalance` |
+| captchaai | 1 | ✅ saldo $5 | `?action=getbalance` |
+
+### Kesimpulan
+
+- **nomask: aset $22 sekarang Rp 0.** Key lama dicabut/di-rotasi. Kalau mau lagi, farming ulang
+  (rasio 4.7%, ~7 detik/akun, tanpa captcha).
+- **obscurify: inventaris ingat, key tidak.** Butuh file `ob_accounts.txt` (id | key | saldo) atau
+  login ke akun obscurify untuk daftar ulang key.
+- **HEX masih hidup** untuk model listing; saldo $0.25 (endpoint balance tidak tersedia publik).
+- **Solver captcha masih hidup** dan itu aset paling siap pakai sekarang.
+
+Detail hasil probe nomask: `nmask_status.json`.
