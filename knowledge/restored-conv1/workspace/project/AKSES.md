@@ -65,7 +65,7 @@ Catatan: token reCAPTCHA **v3 Enterprise** (AllModels) DITOLAK walau token valid
 ### DDoS-Guard — cadangan
 ```
 key : ddosguard_REDACTED
-src : https://my.ddos-guard.net/captcha/139272/keys/JB1BY4C17D99TN-.../common
+src : https://my.ddos-guard.net/captcha/139272/keys/ddosguard_REDACTED/common
 ```
 
 ## Email / identitas
