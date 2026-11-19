@@ -1,6 +1,20 @@
 {
  "checks": [
   {
+   "at": "2026-11-19T08:38:51Z",
+   "verdict": "DEAD",
+   "reason": [],
+   "tokens": [
+    "12d4d4c791",
+    "88e273bb69"
+   ],
+   "new_repos": [],
+   "issues": [],
+   "errors": [
+    "code search gagal: HTTP Error 429: Too Many Requests"
+   ]
+  },
+  {
    "at": "2026-11-19T00:58:55Z",
    "verdict": "DEAD",
    "reason": [],
@@ -168,16 +182,17 @@
   "namhv94/google-ultra-vi"
  ],
  "last": {
-  "at": "2026-11-19T00:58:55Z",
+  "at": "2026-11-19T08:38:51Z",
   "verdict": "DEAD",
   "reason": [],
-  "tokens": [],
+  "tokens": [
+   "12d4d4c791",
+   "88e273bb69"
+  ],
   "new_repos": [],
   "issues": [],
   "errors": [
-   "gagal baca repo: HTTP Error 404: Not Found",
-   "code search gagal: HTTP Error 429: Too Many Requests",
-   "issue gagal: HTTP Error 404: Not Found"
+   "code search gagal: HTTP Error 429: Too Many Requests"
   ]
  }
 }
