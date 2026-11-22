@@ -1,6 +1,31 @@
 {
  "checks": [
   {
+   "at": "2026-11-22T05:32:34Z",
+   "verdict": "DEAD",
+   "reason": [],
+   "tokens": [
+    "12d4d4c791",
+    "88e273bb69"
+   ],
+   "new_repos": [],
+   "issues": [
+    {
+     "n": 51,
+     "title": "还有吗，之前的群能拉我一个吗",
+     "at": "2026-11-19T09:56"
+    },
+    {
+     "n": 50,
+     "title": "403",
+     "at": "2026-11-19T09:35"
+    }
+   ],
+   "errors": [
+    "code search gagal: HTTP Error 429: Too Many Requests"
+   ]
+  },
+  {
    "at": "2026-11-21T23:42:55Z",
    "verdict": "DEAD",
    "reason": [],
@@ -407,7 +432,7 @@
   "namhv94/google-ultra-vi"
  ],
  "last": {
-  "at": "2026-11-21T23:42:55Z",
+  "at": "2026-11-22T05:32:34Z",
   "verdict": "DEAD",
   "reason": [],
   "tokens": [
