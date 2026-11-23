@@ -1,6 +1,19 @@
 {
  "checks": [
   {
+   "at": "2026-11-23T01:07:50Z",
+   "verdict": "DEAD",
+   "reason": [],
+   "tokens": [],
+   "new_repos": [],
+   "issues": [],
+   "errors": [
+    "gagal baca repo: HTTP Error 404: Not Found",
+    "code search gagal: HTTP Error 429: Too Many Requests",
+    "issue gagal: HTTP Error 403: Forbidden"
+   ]
+  },
+  {
    "at": "2026-11-22T20:28:15Z",
    "verdict": "DEAD",
    "reason": [],
@@ -470,7 +483,7 @@
   "namhv94/google-ultra-vi"
  ],
  "last": {
-  "at": "2026-11-22T20:28:15Z",
+  "at": "2026-11-23T01:07:50Z",
   "verdict": "DEAD",
   "reason": [],
   "tokens": [],
