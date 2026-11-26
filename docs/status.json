@@ -1,6 +1,18 @@
 {
  "checks": [
   {
+   "at": "2026-11-26T21:22:42Z",
+   "verdict": "DEAD",
+   "reason": [],
+   "tokens": [],
+   "new_repos": [],
+   "issues": [],
+   "errors": [
+    "gagal baca repo: HTTP Error 404: Not Found",
+    "issue gagal: HTTP Error 403: Forbidden"
+   ]
+  },
+  {
    "at": "2026-11-26T11:58:14Z",
    "verdict": "DEAD",
    "reason": [],
@@ -593,14 +605,24 @@
   }
  ],
  "known_repos": [
+  "RiosWesley/ignorar-teste",
   "STAR-10086/UltraOne",
+  "duwqijlk/google-trial-tool",
   "focusonyoursite/g-ultra",
   "gylive/google-ultra",
+  "hoangsvit/google-ai",
   "huydu-2006/google-ultra",
-  "namhv94/google-ultra-vi"
+  "lqvp/google-ai-pro-2y",
+  "moxi000/google-ultra",
+  "mrthinh307/tut-google-ai-pro-optimized",
+  "namhv94/google-ultra-vi",
+  "sulistta/google-one-tools",
+  "suoha888/google-one-sku-research",
+  "thammynakisa/google-ultra-enhanced",
+  "wc4440222/google-ai-offer-subscription"
  ],
  "last": {
-  "at": "2026-11-26T11:58:14Z",
+  "at": "2026-11-26T21:22:42Z",
   "verdict": "DEAD",
   "reason": [],
   "tokens": [],
@@ -608,7 +630,6 @@
   "issues": [],
   "errors": [
    "gagal baca repo: HTTP Error 404: Not Found",
-   "code search gagal: HTTP Error 429: Too Many Requests",
    "issue gagal: HTTP Error 403: Forbidden"
   ]
  }
