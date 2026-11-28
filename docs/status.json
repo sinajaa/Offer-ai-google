@@ -1,6 +1,19 @@
 {
  "checks": [
   {
+   "at": "2026-11-28T13:15:04Z",
+   "verdict": "DEAD",
+   "reason": [],
+   "tokens": [],
+   "new_repos": [],
+   "issues": [],
+   "errors": [
+    "gagal baca repo: HTTP Error 404: Not Found",
+    "code search gagal: HTTP Error 429: Too Many Requests",
+    "issue gagal: HTTP Error 403: Forbidden"
+   ]
+  },
+  {
    "at": "2026-11-28T04:01:38Z",
    "verdict": "DEAD",
    "reason": [],
@@ -674,7 +687,7 @@
   "wc4440222/google-ai-offer-subscription"
  ],
  "last": {
-  "at": "2026-11-28T04:01:38Z",
+  "at": "2026-11-28T13:15:04Z",
   "verdict": "DEAD",
   "reason": [],
   "tokens": [],
